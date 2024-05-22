@@ -112,6 +112,10 @@ input:focus-visible,
   margin-bottom: 10px;
 }
 
+.querytype {
+  color: var(--darkgrey);
+}
+
 p > span {
   color: var(--Green);
 }
@@ -158,6 +162,7 @@ p > span {
 .message-label {
   display: block;
   margin-bottom: 10px;
+  color: var(--darkgrey);
 }
 
 #message {
