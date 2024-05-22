@@ -88,6 +88,16 @@ function checkConsentChecked() {
   }
 }
 
+function resetForm() {
+  inputElem.forEach((item) => {
+    item.value = "";
+  });
+  textAreaMsg.value = "";
+  inputElem[3].checked = false;
+  inputElem[4].checked = false;
+  inputElem[5].checked = false;
+}
+
 submitBtn.addEventListener("click", function (e) {
   const isNameValid = checkValidName();
   const isEmailValid = checkValidEmail();
@@ -112,5 +122,6 @@ submitBtn.addEventListener("click", function (e) {
         .querySelector(".success-wrap")
         .classList.remove("success-dropdown");
     }, 4000);
+    resetForm();
   }
 });
